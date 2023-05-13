@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "waypointpro"
+  },
+  "targets": {
+    "gallery-flutter-dev": {
+      "hosting": {
+        "prod": [
+          "waypointpro"
+        ],
+        "staging": [
+          "waypointpro"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "53835484048",
+    "project_id": "flutter-waypoint",
+    "storage_bucket": "flutter-waypoint.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53835484048:android:3843136d1074a04cfe4115",
+        "android_client_info": {
+          "package_name": "com.flutter.waypoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53835484048-p98j8horrsesmdt3r29saorua26omjlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3T02E_DiyEgR2ID1ci-YYSIFcBbfPkbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53835484048-p98j8horrsesmdt3r29saorua26omjlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53835484048-qokrdj6ndlae8ia5m5eben1k6b3e8nm2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.waypoint"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53835484048:android:f73b21057ad97c0bfe4115",
+        "android_client_info": {
+          "package_name": "com.waypoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53835484048-p98j8horrsesmdt3r29saorua26omjlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3T02E_DiyEgR2ID1ci-YYSIFcBbfPkbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53835484048-p98j8horrsesmdt3r29saorua26omjlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53835484048-qokrdj6ndlae8ia5m5eben1k6b3e8nm2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.waypoint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
