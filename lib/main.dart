@@ -36,11 +36,12 @@ void main() async {
     // print(docsDir);
     // String canonFilename = '$docsDir/$_logFilename';
     // Lager.initializeLogging(canonFilename);
-    if (Firebase.apps.isEmpty) {
+    // print(Firebase.apps.isEmpty);
+    // if (Firebase.apps.isEmpty) {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
-    }
+    // }
 
     // FlutterError.onError = (errorDetails) {
     //   FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
