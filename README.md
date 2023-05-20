@@ -1,5 +1,5 @@
 # WayPoint
-
+![Demo Image](demo.gif)
 ## Features
 
 - PhoneVerify

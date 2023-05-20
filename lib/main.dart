@@ -3,7 +3,6 @@
 // found in the LICENSE file.
 
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_phone_auth_handler/firebase_phone_auth_handler.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -15,16 +14,8 @@ import 'package:gallery/data/gallery_options.dart';
 import 'package:gallery/shrine/app.dart';
 import 'package:gallery/themes/gallery_theme_data.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:path_provider/path_provider.dart';
-
 import 'firebase_options.dart';
 
-Future<String> _getDocsDir() async {
-  final directory = await getApplicationDocumentsDirectory();
-  return directory.path;
-}
-
-var _logFilename = 'logs.txt';
 
 void main() async {
   GoogleFonts.config.allowRuntimeFetching = false;
