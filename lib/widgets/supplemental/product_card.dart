@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:gallery/layout/adaptive.dart';
 import 'package:gallery/layout/image_placeholder.dart';
-import 'package:gallery/shrine/model/app_state_model.dart';
-import 'package:gallery/shrine/model/product.dart';
+import 'package:gallery/model/app_state_model.dart';
+import 'package:gallery/model/product.dart';
 import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
 

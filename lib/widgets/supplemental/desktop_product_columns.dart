@@ -6,8 +6,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/supplemental/product_card.dart';
+import 'package:gallery/model/product.dart';
+
+import 'product_card.dart';
 
 /// Height of the text below each product card.
 const productCardAdditionalHeight = 84.0 * 2;

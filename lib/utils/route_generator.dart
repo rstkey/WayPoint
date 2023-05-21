@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gallery/pages/authentication_screen.dart';
 import 'package:gallery/pages/verify_phone_number_screen.dart';
-import 'package:gallery/shrine/home.dart';
 import 'package:gallery/utils/helpers.dart';
+
+import '../pages/home.dart';
 
 class RouteGenerator {
   static const _id = 'RouteGenerator';

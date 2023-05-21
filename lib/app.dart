@@ -4,21 +4,22 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/data/gallery_options.dart';
-import 'package:gallery/layout/adaptive.dart';
-import 'package:gallery/pages/authentication_screen.dart';
-import 'package:gallery/pages/verify_phone_number_screen.dart';
-import 'package:gallery/shrine/backdrop.dart';
-import 'package:gallery/shrine/category_menu_page.dart';
-import 'package:gallery/shrine/expanding_bottom_sheet.dart';
-import 'package:gallery/shrine/home.dart';
-import 'package:gallery/shrine/model/app_state_model.dart';
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/page_status.dart';
-import 'package:gallery/shrine/scrim.dart';
-import 'package:gallery/shrine/supplemental/layout_cache.dart';
-import 'package:gallery/shrine/theme.dart';
 import 'package:scoped_model/scoped_model.dart';
+
+import 'data/gallery_options.dart';
+import 'layout/adaptive.dart';
+import 'model/app_state_model.dart';
+import 'model/product.dart';
+import 'page_status.dart';
+import 'pages/authentication_screen.dart';
+import 'pages/home.dart';
+import 'pages/verify_phone_number_screen.dart';
+import 'themes/theme.dart';
+import 'widgets/backdrop.dart';
+import 'widgets/category_menu_page.dart';
+import 'widgets/expanding_bottom_sheet.dart';
+import 'widgets/scrim.dart';
+import 'widgets/supplemental/layout_cache.dart';
 
 class ScreenArguments {
   final String number;
@@ -192,7 +193,6 @@ class _ShrineAppState extends State<ShrineApp>
                     ),
                   ),
                 );
-                ;
             }
           },
           theme: shrineTheme.copyWith(

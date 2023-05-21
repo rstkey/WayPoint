@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/shrine/model/product.dart';
+import 'package:gallery/model/product.dart';
 
 class ProductsRepository {
   static List<Product> loadProducts(Category category) {
@@ -76,7 +76,7 @@ class ProductsRepository {
         id: 7,
         isFeatured: false,
         name: (context) =>
-            "sweet potatoes",
+            'sweet potatoes',
         price: 45,
         assetAspectRatio: 329 / 221,
       ),
@@ -85,7 +85,7 @@ class ProductsRepository {
         id: 8,
         isFeatured: false,
         name: (context) =>
-            "spinach",
+            'spinach',
         price: 38,
         assetAspectRatio: 220 / 329,
       ),
@@ -94,7 +94,7 @@ class ProductsRepository {
         id: 9,
         isFeatured: false,
         name: (context) =>
-            "potatoes",
+            'potatoes',
         price: 70,
         assetAspectRatio: 219 / 329,
       ),
@@ -103,7 +103,7 @@ class ProductsRepository {
         id: 10,
         isFeatured: false,
         name: (context) =>
-            "peas",
+            'peas',
         price: 70,
         assetAspectRatio: 329 / 221,
       ),
@@ -112,7 +112,7 @@ class ProductsRepository {
         id: 11,
         isFeatured: true,
         name: (context) =>
-            "onions",
+            'onions',
         price: 60,
         assetAspectRatio: 220 / 329,
       ),
@@ -121,7 +121,7 @@ class ProductsRepository {
         id: 12,
         isFeatured: false,
         name: (context) =>
-            "mushrooms",
+            'mushrooms',
         price: 178,
         assetAspectRatio: 329 / 219,
       ),
@@ -130,7 +130,7 @@ class ProductsRepository {
         id: 13,
         isFeatured: false,
         name: (context) =>
-            "lettuce",
+            'lettuce',
         price: 74,
         assetAspectRatio: 220 / 329,
       ),
@@ -139,7 +139,7 @@ class ProductsRepository {
         id: 14,
         isFeatured: true,
         name: (context) =>
-            "green beans",
+            'green beans',
         price: 38,
         assetAspectRatio: 219 / 329,
       ),
@@ -148,7 +148,7 @@ class ProductsRepository {
         id: 15,
         isFeatured: true,
         name: (context) =>
-            "eggplant",
+            'eggplant',
         price: 48,
         assetAspectRatio: 329 / 219,
       ),
@@ -157,7 +157,7 @@ class ProductsRepository {
         id: 16,
         isFeatured: true,
         name: (context) =>
-            "cucumbers",
+            'cucumbers',
         price: 98,
         assetAspectRatio: 219 / 329,
       ),
@@ -166,7 +166,7 @@ class ProductsRepository {
         id: 17,
         isFeatured: true,
         name: (context) =>
-            "cauliflower",
+            'cauliflower',
         price: 68,
         assetAspectRatio: 220 / 329,
       ),
@@ -175,7 +175,7 @@ class ProductsRepository {
         id: 18,
         isFeatured: false,
         name: (context) =>
-            "carrots",
+            'carrots',
         price: 38,
         assetAspectRatio: 329 / 223,
       ),
@@ -184,7 +184,7 @@ class ProductsRepository {
         id: 19,
         isFeatured: false,
         name: (context) =>
-            "cabbage",
+            'cabbage',
         price: 58,
         assetAspectRatio: 221 / 329,
       ),
@@ -193,7 +193,7 @@ class ProductsRepository {
         id: 20,
         isFeatured: true,
         name: (context) =>
-            "brussels sprouts",
+            'brussels sprouts',
         price: 42,
         assetAspectRatio: 329 / 219,
       ),
@@ -202,7 +202,7 @@ class ProductsRepository {
         id: 21,
         isFeatured: false,
         name: (context) =>
-            "broccoli",
+            'broccoli',
         price: 27,
         assetAspectRatio: 220 / 329,
       ),
@@ -211,7 +211,7 @@ class ProductsRepository {
         id: 22,
         isFeatured: false,
         name: (context) =>
-            "bell peppers",
+            'bell peppers',
         price: 24,
         assetAspectRatio: 222 / 329,
       ),
@@ -220,7 +220,7 @@ class ProductsRepository {
         id: 23,
         isFeatured: false,
         name: (context) =>
-            "asparagus",
+            'asparagus',
         price: 58,
         assetAspectRatio: 219 / 329,
       ),
@@ -229,7 +229,7 @@ class ProductsRepository {
         id: 24,
         isFeatured: true,
         name: (context) =>
-            "tomatoes",
+            'tomatoes',
         price: 58,
         assetAspectRatio: 219 / 329,
       ),

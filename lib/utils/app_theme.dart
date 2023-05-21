@@ -50,7 +50,6 @@ class AppTheme {
         secondary: accentColor,
         onSecondary: onAccentColor ?? textColor,
       ),
-      toggleableActiveColor: accentColor,
       // textSelectionTheme: TextSelectionThemeData(
       //   cursorColor: accentColor,
       //   selectionColor: accentColor?.withOpacity(0.75),
@@ -88,7 +87,30 @@ class AppTheme {
           for (final targetValue in TargetPlatform.values)
             targetValue: const _SlideLeftTransitionsBuilder(),
         },
-      ),
+      ), switchTheme: SwitchThemeData(
+ thumbColor: MaterialStateProperty.resolveWith<Color?>((states) {
+ if (states.contains(MaterialState.disabled)) { return null; }
+ if (states.contains(MaterialState.selected)) { return accentColor; }
+ return null;
+ }),
+ trackColor: MaterialStateProperty.resolveWith<Color?>((states) {
+ if (states.contains(MaterialState.disabled)) { return null; }
+ if (states.contains(MaterialState.selected)) { return accentColor; }
+ return null;
+ }),
+ ), radioTheme: RadioThemeData(
+ fillColor: MaterialStateProperty.resolveWith<Color?>((states) {
+ if (states.contains(MaterialState.disabled)) { return null; }
+ if (states.contains(MaterialState.selected)) { return accentColor; }
+ return null;
+ }),
+ ), checkboxTheme: CheckboxThemeData(
+ fillColor: MaterialStateProperty.resolveWith<Color?>((states) {
+ if (states.contains(MaterialState.disabled)) { return null; }
+ if (states.contains(MaterialState.selected)) { return accentColor; }
+ return null;
+ }),
+ ),
     );
   }
 

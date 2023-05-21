@@ -7,11 +7,11 @@ class PinInputField extends StatefulWidget {
   final void Function(String) onSubmit;
 
   const PinInputField({
-    Key? key,
+    super.key,
     this.length = 6,
     this.onFocusChange,
     required this.onSubmit,
-  }) : super(key: key);
+  });
 
   @override
   // ignore: library_private_types_in_public_api
@@ -68,7 +68,7 @@ class _PinInputFieldState extends State<PinInputField> {
       ),
       decoration: BoxDecoration(
         color: Theme.of(context).cardColor,
-        border: Border.all(color: Color.fromRGBO(18, 110, 185, 1)),
+        border: Border.all(color: const Color.fromRGBO(18, 110, 185, 1)),
         borderRadius: BorderRadius.circular(7.5),
       ),
     );
@@ -95,7 +95,7 @@ class _PinInputFieldState extends State<PinInputField> {
         ),
         errorPinTheme: defaultPinTheme.copyWith(
           decoration: BoxDecoration(
-            color: Theme.of(context).errorColor,
+            color: Theme.of(context).colorScheme.error,
             borderRadius: BorderRadius.circular(8),
           ),
         ),

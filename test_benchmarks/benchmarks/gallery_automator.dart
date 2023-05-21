@@ -8,16 +8,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gallery/main.dart';
 
-import 'scroll.dart';
 
-const Duration _initialWaitingDuration = Duration(milliseconds: 1500);
 
 const List<String> _demosWithAnimation = <String>[
   'progress-indicator@material',
   'cupertino-activity-indicator@cupertino',
 ];
 
-const Duration _defaultWaitingDuration = Duration(seconds: 3);
 
 enum DemoType {
   study,

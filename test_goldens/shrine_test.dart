@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:gallery/main.dart';
-import 'package:gallery/shrine/supplemental/product_card.dart';
+import 'package:gallery/widgets/supplemental/product_card.dart';
 
 import 'testing/precache_images.dart';
 import 'testing/util.dart';

@@ -5,16 +5,16 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-
 import 'package:gallery/data/gallery_options.dart';
 import 'package:gallery/layout/text_scale.dart';
-import 'package:gallery/shrine/category_menu_page.dart';
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/page_status.dart';
-import 'package:gallery/shrine/supplemental/balanced_layout.dart';
-import 'package:gallery/shrine/supplemental/desktop_product_columns.dart';
-import 'package:gallery/shrine/supplemental/product_card.dart';
-import 'package:gallery/shrine/supplemental/product_columns.dart';
+import 'package:gallery/model/product.dart';
+
+import '../../page_status.dart';
+import '../category_menu_page.dart';
+import 'balanced_layout.dart';
+import 'desktop_product_columns.dart';
+import 'product_card.dart';
+import 'product_columns.dart';
 
 const _topPadding = 34.0;
 const _bottomPadding = 44.0;

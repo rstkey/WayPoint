@@ -9,8 +9,8 @@ class AuthenticationScreen extends StatefulWidget {
   static const id = 'AuthenticationScreen';
 
   const AuthenticationScreen({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   // ignore: library_private_types_in_public_api
@@ -43,7 +43,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                 child: Form(
                   key: _formKey,
                   child: IntlPhoneField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Phone Number',
                       border: OutlineInputBorder(
                         borderSide: BorderSide(),
@@ -71,7 +71,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                       !_formKey.currentState!.validate()) {
                     showSnackBar('Please enter a valid phone number!');
                   } else {
-                    Navigator.pushNamed(
+                    await Navigator.pushNamed(
                       context,
                       VerifyPhoneNumberScreen.id,
                       arguments: phoneNumber,

@@ -4,12 +4,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
-import 'package:gallery/data/gallery_options.dart';
-import 'package:gallery/layout/adaptive.dart';
-import 'package:gallery/shrine/expanding_bottom_sheet.dart';
-import 'package:gallery/shrine/model/app_state_model.dart';
-import 'package:gallery/shrine/supplemental/asymmetric_view.dart';
 import 'package:scoped_model/scoped_model.dart';
+
+import '../data/gallery_options.dart';
+import '../layout/adaptive.dart';
+import '../model/app_state_model.dart';
+import '../widgets/expanding_bottom_sheet.dart';
+import '../widgets/supplemental/asymmetric_view.dart';
 
 const _ordinalSortKeyName = 'home';
 

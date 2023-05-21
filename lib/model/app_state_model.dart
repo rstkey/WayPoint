@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-
 import 'package:flutter/material.dart';
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/model/products_repository.dart';
 import 'package:scoped_model/scoped_model.dart';
+
+import 'product.dart';
+import 'products_repository.dart';
 
 double _salesTaxRate = 0.06;
 double _shippingCostPerItem = 7;
@@ -58,13 +58,13 @@ class AppStateModel extends Model {
       //   .where((item) => item.name.toString().contains(_searchValue))
       //   .toList();
       // } else {
-      List<Product> list =  _availableProducts
-          .where((item) => item.name(context)
+      List<Product> list = _availableProducts
+          .where((item) => item
+              .name(context)
               .toLowerCase()
               .contains(_searchValue.toLowerCase()))
           .toList();
 
-      
       print(list.length);
       return list;
       // }
@@ -72,7 +72,8 @@ class AppStateModel extends Model {
       return _availableProducts
           .where((p) =>
               p.category == _selectedCategory &&
-              p.name(context)
+              p
+                  .name(context)
                   .toLowerCase()
                   .contains(_searchValue.toLowerCase()))
           .toList();

@@ -4,24 +4,26 @@
 
 import 'dart:convert';
 import 'dart:developer';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/.env.dart';
-import 'package:gallery/constants.dart';
-import 'package:gallery/layout/letter_spacing.dart';
-import 'package:gallery/shrine/colors.dart';
-import 'package:gallery/shrine/expanding_bottom_sheet.dart';
-import 'package:gallery/shrine/model/app_state_model.dart';
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/theme.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:stripe_checkout/stripe_checkout.dart';
-import 'platforms/stripe_checkout.dart'
+
+import '../.env.dart';
+import '../layout/letter_spacing.dart';
+import '../model/app_state_model.dart';
+import '../model/product.dart';
+import '../platforms/stripe_checkout.dart'
     if (dart.library.js) 'platforms/stripe_checkout_web.dart';
+import '../themes/colors.dart';
+import '../themes/theme.dart';
+import '../utils/constants.dart';
+import 'expanding_bottom_sheet.dart';
 
 const _startColumnWidth = 60.0;
 const _ordinalSortKeyName = 'shopping_cart';
@@ -50,6 +52,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
 
   Future<void> getCheckout() async {
     final String sessionId = await _createCheckoutSession();
+    // ignore: use_build_context_synchronously
     final result = await redirectToCheckout(
       context: context,
       sessionId: sessionId,
@@ -60,10 +63,10 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
 
     if (mounted) {
       final text = result.when(
-        success: () => 'Paid succesfully',
+        success: () => 'Paid Successfully',
         canceled: () => 'Checkout canceled',
         error: (e) => 'Error $e',
-        redirected: () => 'Redirected succesfully',
+        redirected: () => 'Redirected Successfully',
       );
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(text)),
@@ -192,7 +195,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         child: Text(
-                          "CHECKOUT",
+                          'CHECKOUT',
                           style: TextStyle(
                               letterSpacing:
                                   letterSpacingOrNone(largeLetterSpacing)),

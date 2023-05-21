@@ -6,13 +6,12 @@
 
 import 'dart:typed_data';
 
-import 'package:transparent_image/transparent_image.dart' as transparent_image;
-
 import 'package:flutter/foundation.dart';
+import 'package:transparent_image/transparent_image.dart' as transparent_image;
 
 // If you are using a real device to test the integration replace this url
 // with the endpoint of your test server (it usually should be the IP of your computer)
-final kApiUrl = 'https://stripe-server-silk.vercel.app';
+const kApiUrl = 'https://stripe-server-silk.vercel.app';
 
 // Height of the 'Gallery' header
 const double galleryHeaderHeight = 64;

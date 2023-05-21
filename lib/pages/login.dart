@@ -11,8 +11,9 @@ import 'package:gallery/layout/adaptive.dart';
 import 'package:gallery/layout/image_placeholder.dart';
 import 'package:gallery/layout/letter_spacing.dart';
 import 'package:gallery/layout/text_scale.dart';
-import 'package:gallery/shrine/home.dart';
-import 'package:gallery/shrine/theme.dart';
+
+import '../themes/theme.dart';
+import 'home.dart';
 
 const _horizontalPadding = 24.0;
 
@@ -40,7 +41,7 @@ class LoginPage extends StatelessWidget {
                       width: desktopLoginScreenMainAreaWidth(context: context),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           _ShrineLogo(),
                           SizedBox(height: 40),
                           _UsernameTextField(),

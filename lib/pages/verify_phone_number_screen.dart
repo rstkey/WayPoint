@@ -1,10 +1,10 @@
 import 'package:firebase_phone_auth_handler/firebase_phone_auth_handler.dart';
 import 'package:flutter/material.dart';
-import 'package:gallery/shrine/home.dart';
 import 'package:gallery/widgets/custom_loader.dart';
 import 'package:gallery/widgets/pin_input_field.dart';
 
 import '../utils/helpers.dart';
+import 'home.dart';
 
 class VerifyPhoneNumberScreen extends StatefulWidget {
   static const id = 'VerifyPhoneNumberScreen';
@@ -12,9 +12,9 @@ class VerifyPhoneNumberScreen extends StatefulWidget {
   final String phoneNumber;
 
   const VerifyPhoneNumberScreen({
-    Key? key,
+    super.key,
     required this.phoneNumber,
-  }) : super(key: key);
+  });
 
   @override
   State<VerifyPhoneNumberScreen> createState() =>
@@ -91,7 +91,7 @@ class _VerifyPhoneNumberScreenState extends State<VerifyPhoneNumberScreen>
             msg: 'Login Success UID: ${userCredential.user?.uid}',
           );
 
-          Navigator.pushNamedAndRemoveUntil(
+          await Navigator.pushNamedAndRemoveUntil(
             context,
             HomePage.id,
             (route) => false,

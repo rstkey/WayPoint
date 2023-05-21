@@ -7,10 +7,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/shrine/category_menu_page.dart';
-import 'package:gallery/shrine/model/app_state_model.dart';
-import 'package:gallery/shrine/page_status.dart';
+import 'package:gallery/model/app_state_model.dart';
 import 'package:scoped_model/scoped_model.dart';
+
+import '../page_status.dart';
+import 'category_menu_page.dart';
 
 const Cubic _accelerateCurve = Cubic(0.548, 0, 0.757, 0.464);
 const Cubic _decelerateCurve = Cubic(0.23, 0.94, 0.41, 1);
@@ -331,13 +332,13 @@ class _BackdropState extends State<Backdrop>
     return TextField(
       autofocus: true, //Display the keyboard when TextField is displayed
       cursorColor: Colors.black,
-      style: TextStyle(
+      style: const TextStyle(
         color: Colors.black,
         fontSize: 20,
       ),
       textInputAction:
           TextInputAction.search, //Specify the action button on the keyboard
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         //Style of TextField
         enabledBorder: UnderlineInputBorder(
             //Default TextField border
@@ -365,7 +366,7 @@ class _BackdropState extends State<Backdrop>
     final appBar = AppBar(
         automaticallyImplyLeading: false,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        backgroundColor: Color.fromARGB(255, 82, 185, 68),
+        backgroundColor: const Color.fromARGB(255, 82, 185, 68),
         elevation: 0,
         titleSpacing: 0,
         title: !_searchBoolean

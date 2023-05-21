@@ -4,9 +4,10 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/supplemental/desktop_product_columns.dart';
-import 'package:gallery/shrine/supplemental/layout_cache.dart';
+import 'package:gallery/model/product.dart';
+
+import 'desktop_product_columns.dart';
+import 'layout_cache.dart';
 
 /// A placeholder id for an empty element. See [_iterateUntilBalanced]
 /// for more information.

@@ -4,8 +4,9 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:gallery/shrine/model/product.dart';
-import 'package:gallery/shrine/supplemental/product_card.dart';
+import 'package:gallery/model/product.dart';
+
+import 'product_card.dart';
 
 class TwoProductCardColumn extends StatelessWidget {
   const TwoProductCardColumn({
