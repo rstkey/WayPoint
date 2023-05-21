@@ -1,5 +1,7 @@
 # WayPoint
+
 ![Demo Image](demo.gif)
+
 ## Features
 
 - PhoneVerify
@@ -15,7 +17,7 @@ These include:
 
 ## Running
 
-One can run the gallery locally for any of these platforms. For desktop platforms,
+One can run the WayPoint locally for any of these platforms. For desktop platforms,
 please see the [Flutter docs](https://docs.flutter.dev/desktop) for the latest
 requirements.
 

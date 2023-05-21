@@ -6,7 +6,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gallery/main.dart';
+import 'package:waypoint/main.dart';
 
 
 
@@ -69,7 +69,7 @@ class GalleryAutomator {
     // There is no `catchError` here, because all errors are caught by
     // the zone set up in `lib/web_benchmarks.dart` in `flutter/flutter`.
     
-    return const GalleryApp();
+    return const App();
   }
 
   /// Opens and quits demos that are specified by [shouldRunPredicate], twice.

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gallery/main.dart';
-import 'package:gallery/pages/home.dart';
+import 'package:waypoint/main.dart';
+import 'package:waypoint/pages/home.dart';
 
 void main() {
   testWidgets(
     'State restoration test - Home Page',
     (tester) async {
-      await tester.pumpWidget(const GalleryApp());
+      await tester.pumpWidget(const App());
       // Let the splash page animations complete.
       await tester.pump(const Duration(seconds: 1));
       expect(find.byType(HomePage), findsOneWidget);
@@ -52,7 +52,7 @@ void main() {
   testWidgets(
     'State restoration test -  Gallery Demo',
     (tester) async {
-      await tester.pumpWidget(const GalleryApp());
+      await tester.pumpWidget(const App());
       // Let the splash page animations complete.
       await tester.pump(const Duration(seconds: 1));
       expect(find.byType(HomePage), findsOneWidget);
@@ -84,7 +84,7 @@ void main() {
   testWidgets(
     'State restoration test - Reply Study',
     (tester) async {
-      await tester.pumpWidget(const GalleryApp());
+      await tester.pumpWidget(const App());
       // Let the splash page animations complete.
       await tester.pump(const Duration(seconds: 1));
 

@@ -45,11 +45,11 @@ void main() async {
     // };
   // }
 
-  runApp(const GalleryApp());
+  runApp(const App());
 }
 
-class GalleryApp extends StatelessWidget {
-  const GalleryApp({
+class App extends StatelessWidget {
+  const App({
     super.key,
     this.initialRoute,
     this.isTestMode = false,

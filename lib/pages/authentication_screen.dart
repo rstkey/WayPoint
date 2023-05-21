@@ -1,9 +1,9 @@
 import 'package:easy_container/easy_container.dart';
 import 'package:flutter/material.dart';
-import 'package:gallery/pages/verify_phone_number_screen.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../utils/helpers.dart';
+import 'verify_phone_number_screen.dart';
 
 class AuthenticationScreen extends StatefulWidget {
   static const id = 'AuthenticationScreen';

@@ -4,11 +4,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gallery/main.dart';
+import 'package:waypoint/main.dart';
 
 void main() {
   testWidgets('Home page hides settings semantics when closed', (tester) async {
-    await tester.pumpWidget(const GalleryApp());
+    await tester.pumpWidget(const App());
 
     await tester.pump(const Duration(seconds: 1));
 
@@ -25,7 +25,7 @@ void main() {
   });
 
   testWidgets('Home page list view is the primary list view', (tester) async {
-    await tester.pumpWidget(const GalleryApp());
+    await tester.pumpWidget(const App());
     await tester.pumpAndSettle();
 
     ListView listview =

@@ -4,15 +4,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/data/gallery_options.dart';
-import 'package:gallery/layout/adaptive.dart';
-import 'package:gallery/layout/text_scale.dart';
-import 'package:gallery/model/app_state_model.dart';
-import 'package:gallery/model/product.dart';
-import 'package:gallery/pages/authentication_screen.dart';
 import 'package:scoped_model/scoped_model.dart';
 
+import '../data/gallery_options.dart';
+import '../layout/adaptive.dart';
+import '../layout/text_scale.dart';
+import '../model/app_state_model.dart';
+import '../model/product.dart';
 import '../page_status.dart';
+import '../pages/authentication_screen.dart';
 import '../themes/colors.dart';
 import 'triangle_category_indicator.dart';
 

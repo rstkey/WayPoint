@@ -4,8 +4,8 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:gallery/model/product.dart';
 
+import '../../model/product.dart';
 import 'desktop_product_columns.dart';
 import 'layout_cache.dart';
 

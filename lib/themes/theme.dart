@@ -4,9 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gallery/layout/letter_spacing.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../layout/letter_spacing.dart';
 import '../widgets/supplemental/cut_corners_border.dart';
 import 'colors.dart';
 

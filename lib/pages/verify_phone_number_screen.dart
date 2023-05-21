@@ -1,9 +1,9 @@
 import 'package:firebase_phone_auth_handler/firebase_phone_auth_handler.dart';
 import 'package:flutter/material.dart';
-import 'package:gallery/widgets/custom_loader.dart';
-import 'package:gallery/widgets/pin_input_field.dart';
 
 import '../utils/helpers.dart';
+import '../widgets/custom_loader.dart';
+import '../widgets/pin_input_field.dart';
 import 'home.dart';
 
 class VerifyPhoneNumberScreen extends StatefulWidget {

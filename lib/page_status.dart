@@ -4,7 +4,8 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:gallery/layout/adaptive.dart';
+import 'layout/adaptive.dart';
+
 
 class PageStatus extends InheritedWidget {
   const PageStatus({

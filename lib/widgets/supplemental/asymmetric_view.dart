@@ -5,10 +5,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:gallery/data/gallery_options.dart';
-import 'package:gallery/layout/text_scale.dart';
-import 'package:gallery/model/product.dart';
 
+import '../../data/gallery_options.dart';
+import '../../layout/text_scale.dart';
+import '../../model/product.dart';
 import '../../page_status.dart';
 import '../category_menu_page.dart';
 import 'balanced_layout.dart';

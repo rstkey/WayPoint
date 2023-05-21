@@ -3,8 +3,8 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:gallery/themes/material_demo_theme_data.dart';
 import 'package:test/test.dart';
+import 'package:waypoint/themes/material_demo_theme_data.dart';
 
 void main() {
   test('verify former toggleableActiveColor themes are set', () async {

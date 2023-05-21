@@ -1,6 +1,6 @@
-name: gallery
+name: waypoint
 description: A resource to help developers evaluate and use Flutter.
-repository: https://github.com/flutter/gallery
+repository: https://github.com/Togame-san/Waypoint
 version: 2.10.0+021000 # See README.md for details on versioning.
 
 environment:

@@ -7,9 +7,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/model/app_state_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
+import '../model/app_state_model.dart';
 import '../page_status.dart';
 import 'category_menu_page.dart';
 

@@ -6,12 +6,12 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
-import 'package:gallery/data/gallery_options.dart';
-import 'package:gallery/layout/adaptive.dart';
-import 'package:gallery/layout/image_placeholder.dart';
-import 'package:gallery/layout/letter_spacing.dart';
-import 'package:gallery/layout/text_scale.dart';
 
+import '../data/gallery_options.dart';
+import '../layout/adaptive.dart';
+import '../layout/image_placeholder.dart';
+import '../layout/letter_spacing.dart';
+import '../layout/text_scale.dart';
 import '../themes/theme.dart';
 import 'home.dart';
 
